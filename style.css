@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Cream);
+  font-size: 1.8rem;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.top-container {
+  background-color: var(--Soft-red);
+  width: 370px;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.top-left p {
+  font-size: 1.5rem;
+  color: var(--Cream);
+}
+.top-left h3 {
+  color: var(--Cream);
+}
+
+.bottom-container {
+  background-color: var(--Very-pale-orange);
+  width: 370px;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.bottom-container h2 {
+  color: var(--Dark-brown);
+  font-size: 2.5rem;
+}
+
+.bottom-bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bars-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  height: 200px;
+  width: 4rem;
+}
+
+.bars-div .bars-height {
+  display: none;
+}
+
+.bars-div.show .bars-height {
+  display: block;
+  color: var(--Very-pale-orange);
+  background-color: var(--Dark-brown);
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  border-radius: 3px;
+}
+
+.bars-div.show .days-bar {
+  opacity: 0.7;
+}
+
+.bars-div p {
+  color: var(--Medium-brown);
+  font-size: 1.1rem;
+}
+
+.days-bar {
+  width: 3.5rem;
+  background-color: var(--Soft-red);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.days-bar.wed {
+  background-color: var(--Cyan);
+}
+
+.bottom-line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--Cream);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottom-left p {
+  color: var(--Medium-brown);
+  font-size: 1.3rem;
+}
+
+.bottom-left h3 {
+  color: var(--Dark-brown);
+  font-size: 2.5rem;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bottom-right h4 {
+  color: var(--Dark-brown);
+  font-size: 1.5rem;
+}
+
+.bottom-right p {
+  font-size: 1.3rem;
+  color: var(--Medium-brown);
+}
